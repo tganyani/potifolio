@@ -1,0 +1,27 @@
+<nav>
+  <div class="container-fluid navbar">
+    <img class="logo" src="./homeImages/logoTgb.png" alt="logo">
+    <div class="navbar-nav" id="navItems">
+      <div><a class="nav-link" href="/">Home</a></div>
+      <div> <a class="nav-link" href="/posts">Posts</a></div>
+      <%if (locals.session.isLoggedIn) { %>
+        <div> <a class="nav-link" href="/newpost">New Post</a></div>
+        <div class="logout-user">
+          <div><i class="fa fa-user"></i>
+            <p>
+              <%= locals.session.username %>
+            </p>
+          </div>
+          <form action="/logout" method="POST">
+            <button type="submit">Sign Out</button>
+          </form>
+        </div>
+        <% }else{ %>
+          <div><a class="nav-link" href="/login">Sign In</a></div>
+          <div> <a class="nav-link" href="/signup">Sign Up</a></div>
+          <%}%>
+    </div>
+    <div class="menu-icon"><img class="menu-svg" src="./homeImages/bars-solid.svg" alt="user"
+        onclick="handleToggleMenuItems()" /></div>
+  </div>
+</nav>

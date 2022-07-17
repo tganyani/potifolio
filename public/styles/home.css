@@ -1,0 +1,341 @@
+*{
+    box-sizing: border-box;
+}
+
+/*Nav bar*/
+.logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    position: absolute;
+    top: 0;
+    left: 12px;
+}
+.navbar-nav{
+    width: 60% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    margin-left: 30%;
+    z-index: 4;
+}
+.navbar{
+    background-color: rgb(250, 242, 242);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+}
+.nav-link{
+    color: black !important;
+}
+
+.menu-icon{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 12px;
+    font-size: 30px;
+
+}
+.menu-svg{
+    width: 30px;
+}
+.close-open-menuList{
+    display: flex !important;
+    flex-direction: column;
+    align-items: center !important;
+    background-color: rgb(250, 242, 242);
+    margin-top: 80px;
+    width: 100% !important;
+    height: auto !important;
+
+}
+
+.navbar-nav > div:hover::after{
+    content: " ";
+    display: block;
+    height: 2px;
+    width: auto;
+    background-color: red;
+}
+.logout-user{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.logout-user button {
+    background-color: red;
+    border: none;
+    border-radius: 15px;
+    height: 30px;
+    font-size: 12px;
+    width: 80px;
+}
+.logout-user >div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.fa-user{
+    font-size: 30px;
+}
+
+/* intro */
+.intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 90px;
+    padding: 0 !important;
+}
+.text-image img{
+    width: 200px;
+    height: 200px;
+}
+.intro-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.intro-image img {
+    width: 360px;
+    height: 400px;
+    border-radius: 200px;
+    box-shadow: 4px 0 20px rgb(201, 195, 195);
+}
+
+ .intro-text {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    box-shadow: 4px 4px 4px rgb(201, 195, 195);
+ } 
+ .intro-text div span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+ }
+ .intro-text div p {
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-size: 30px;
+ }
+ .intro-text:hover{
+    transform: scale(1.02);
+ }
+
+/* skills-projects */
+.skills-projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 90px;
+    margin-bottom: 70px;
+}
+.skills, .projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 6px 6px 8px rgb(17, 16, 16);
+    margin-bottom: 30px;
+}
+.skills-sub{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+.skills-sub >div {
+    width: 200px;
+    height: 240px;
+    margin-bottom: 20px;
+}
+.skills-sub ul li:hover,.projects-sub ul li:hover{
+color: red;
+}
+.skills-sub .frontend{
+    background-color: lightseagreen;
+}
+.skills-sub .frontend:hover::before{
+    content: "";
+    background-color: lightgreen;
+    height: 10px;
+    display: block;
+}
+.skills-sub .backend:hover::before{
+    content: "";
+    background-color:lightseagreen;
+    height: 10px;
+    display: block;
+}
+.skills-sub .backend{
+    background-color: lightgreen;
+}
+.frontend:hover,.backend:hover{
+    box-shadow: 4px 4px 5px  rgb(132, 128, 128);
+    transform: scale(1.02)
+}
+
+.skills-projects ul {
+    list-style: none;
+}
+.projects-sub{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow:  wrap;
+}
+.projects-sub >div{
+    width: 200px;
+    height: 240px;
+    margin-bottom: 20px;
+}
+.todos {
+    background-color: lightskyblue;
+}
+.chat{
+    background-color: lightblue;
+}
+.cat {
+    background-color: lightcyan;
+}
+.todos:hover::before{
+    content: "";
+    background-color:lightblue ;
+    height: 10px;
+    display: block;
+}
+.chat:hover::before{
+    content: "";
+    background-color: lightcyan;
+    height: 10px;
+    display: block;
+}
+ .cat:hover::before{
+    content: "";
+    background-color:lightblue;
+    height: 10px;
+    display: block;
+}
+.todos:hover,.chat:hover,.cat:hover{
+    box-shadow: 4px 4px 5px  rgb(132, 128, 128);
+    transform: scale(1.02)
+}
+/* footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 260px;
+    background-color: rgb(250, 242, 242);
+
+}
+.fa-github:hover{
+    color: red;
+    font-size: 20px;
+}
+
+
+/* signin-form */
+.signin-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.signin-form form {
+    width: 600px;
+    border: 1px solid rgb(79, 76, 76);
+    padding: 40px;
+}
+
+.form-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+ .error{
+    color: red;
+}
+.success-masage{
+    color: green;
+}
+/* posts */
+.posts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.card{
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 300px;
+}
+.card img{
+    width: 300px;
+    height: 300px;
+}
+.card img:hover{
+    opacity: 0.8;
+}
+
+
+@media only screen and (max-width:600px){
+    .navbar-nav{
+        display: none;
+        width: 0;
+        margin-left: 0 !important;
+
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 !important;
+        height: 100px !important;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .intro{
+        flex-direction: column;
+        align-items: center;
+    } 
+    .logout-user{
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro-image img {
+        width: 400px;
+        height: 400px;
+        border-radius: 200px;
+    }
+    .skills-projects{
+        flex-direction: column;
+        align-items: center;
+    }
+   .cat, .chat, .todos {
+        width: 350px !important;
+    }
+    .skills-sub{
+        justify-content: space-around;
+    }
+    .skills-sub >div {
+        width: 350px;
+    }
+    
+}
+
+@media only screen and (max-width:500px){
+    .intro-image img {
+        width: 380px;
+        height: 380px;
+        border-radius: 190px;
+    }
+}
+

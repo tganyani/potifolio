@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/header') -%>
+<body>
+  <!-- nav bar -->
+  <%- include('./partials/navbar') %>
+<div class="signin-form container-fluid ">
+    <form action="/posts" method="post" enctype="multipart/form-data">
+        <div class="form-title">
+            <h4>New Post</h4>
+        </div>
+        <p class="success-masage">
+            <%= message %>
+        </p>
+        <p class="error"></p>
+        <div class="mb-3">
+            <label for="username" class="form-label">username</label>
+            <input type="text" class="form-control" id="username" name="username" value=<%=locals.session.username %>
+            disabled>
+        </div>
+        <div class="mb-3">
+            <label for="post-title" class="form-label">Post description</label>
+            <textarea type="text" class="form-control" id="post-title" rows="3" name="description"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="post-image" class="form-label">Image</label>
+            <input type="file" class="form-control" id="post-image" name="image">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+   
+    <!-- footer -->
+    <%- include('./partials/footer') %>
+    <!-- scrpts -->
+    <%- include('./partials/scripts') %>
+
+</body>
+</html>

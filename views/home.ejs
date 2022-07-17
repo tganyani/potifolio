@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include('./partials/header'); -%>
+<body>
+  <!-- nav bar -->
+<%-include('./partials/navbar'); %>
+    <!-- intro-->
+    <div class="intro container-fluid">
+      <div class="intro-text">
+        <div> <span>Hi! welcome to my potifolio:</span> <br>
+          <p>I'm Tatenda Ganyani,
+            I'm a junior fullstack
+            nodejs webdeveloper
+          </p>
+        </div>
+        <div class="text-image">
+          <img src="/homeImages/p-image2.png" alt="image1">
+          <img src="/homeImages/p-image3.png" alt="image2">
+        </div>
+      </div>
+      <div class="intro-image ">
+        <img src="./homeImages/IMG_20220201_175128.jpg" alt="">
+      </div>
+    </div>
+    <!-- skills and projects -->
+    <div class="skills-projects container-fluid">
+      <div class="skills">
+        <h4>skills</h4>
+        <div class="skills-sub">
+          <div class="frontend">
+            <h5>frontend</h5>
+            <hr/>
+            <ul>
+              <li>html5</li>
+              <li>css / sass</li>
+              <li>bootstrap / material ui</li>
+              <li>react-js with hooks</li>
+              <li>react redux / redux-toolkit</li>
+              <li>javascript / typescript</li>
+            </ul>
+          </div>
+          <div class="backend">
+            <h5>backend</h5>
+            <hr/>
+            <ul>
+              <li>mysql / postgresql / mongodb</li>
+              <li>mongoose / typeorem</li>
+              <li>node js</li>
+              <li>express-js / nest-js</li>
+              <li>heroku</li>
+              <li>git</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="projects">
+        <h4>projects done</h4>
+        <div class="projects-sub">
+          <div class="todos">
+            <h5>todos</h5>
+            <hr>
+            <div>
+              <p>technologies used</p>
+              <ul>
+                <li>react js</li>
+                <li>react redux</li>
+              </ul>
+            </div>
+            <a href="https://tganyani.github.io/todo-app">visit<img style="width:20px;" src="/homeImages/arrow1.svg" alt="arrow1"></a>
+          </div>
+          <div class="chat">
+            <h5>chat app</h5>
+            <hr>
+            <div>
+              <p>technologies used</p>
+              <ul>
+                <li>react js</li>
+                <li>react router dom</li>
+                <li>axios</li>
+              </ul>
+            </div>
+            <a href="https://frontendmessenger-tganyani.vercel.app/">visit<img style="width:20px;" src="/homeImages/arrow1.svg" alt="arrow1"></a>
+          </div>
+          <div class="cat">
+            <h5>display cat frontend</h5>
+            <hr>
+            <div>
+              <p>technologies used</p>
+              <ul>
+                <li>react js</li>
+                <li>react router dom</li>
+                <li>axios</li>
+                <li>react redux</li>
+              </ul>
+            </div>
+            <a href="https://tganyani.github.io/catfrontend/">visit<img style="width:20px;" src="/homeImages/arrow1.svg" alt="arrow1"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+   <%-include('./partials/footer');%>
+   <!--  -->
+   <%-include('./partials/scripts');%>
+   
+</body>
+</html>
+
+
